@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:cnb_iconColor="@color/white"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_backgroundColor="@color/bottomNavBG"
+
+    />
+
+    <item
+        android:id="@+id/bottom_nav_reports"
+        android:title="Reports"
+        android:icon="@drawable/reports"
+        app:cnb_iconColor="@color/white"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_backgroundColor="@color/bottomNavBG"
+    />
+
+    <item
+        android:id="@+id/bottom_nav_diet"
+        android:title="Walk"
+        android:icon="@drawable/walk_image"
+        app:cnb_iconColor="@color/white"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_backgroundColor="@color/bottomNavBG"
+    />
+
+    <item
+        android:id="@+id/bottom_nav_settings"
+        android:title="More"
+        android:icon="@drawable/settings"
+        app:cnb_iconColor="@color/white"
+        app:cnb_iconTintMode="src_in"
+        app:cnb_backgroundColor="@color/bottomNavBG"
+    />
+
+</menu>

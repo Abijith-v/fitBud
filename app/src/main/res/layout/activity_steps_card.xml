@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cards.stepsCard">
+
+<!--    action bar-->
+    <RelativeLayout
+        android:id="@+id/actionBarRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:theme="?actionBarTheme">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/backButtonSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/purple_500"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            app:cardCornerRadius="100dp"
+            app:rippleColor="@color/lightGrey">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:padding="5dp"
+                android:src="@drawable/back_button" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/actionbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:maxLength="25"
+            android:text="Daily step goal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/purple_500"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            app:cardCornerRadius="100dp"
+            app:rippleColor="@color/lightGrey">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:cropToPadding="true"
+                    android:padding="5dp"
+
+                    android:src="@drawable/reset_icon" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:id="@+id/waveProgressbar"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="40dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:wlv_round_rectangle="true"
+            app:wlv_wave_background_Color="@color/darkgreen"
+            app:wlv_waveColor="@color/BGcolor"
+            app:wlv_borderColor="@color/BGcolor"
+            app:wlv_borderWidth="3dp"
+            app:wlv_progressValue="0"
+            app:wlv_waveAmplitude="70" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/stepCountInPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/stepGoalInPB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        android:background="@drawable/semi_round_button"
+        android:backgroundTint="@color/BGcolor"
+        android:id="@+id/stepGoalUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="STEP GOAL : "
+            android:padding="5dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/stepGoalInStepCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:text="-"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

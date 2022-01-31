@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeScreen.healthFrag">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:background="@drawable/transparent_full_round"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/workoutTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabUnboundedRipple="true"
+        app:tabIndicatorGravity="stretch"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/BGcolor"
+        app:tabIndicator="@drawable/fully_round_green"
+        app:tabTextColor="@color/BGcolor"
+        app:tabIconTint="@color/selected_colour"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/workoutViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

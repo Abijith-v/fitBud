@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".itemsInMore.profile">
+
+
+    <!--        action bar-->
+    <RelativeLayout
+        android:id="@+id/actionBarRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:theme="?actionBarTheme">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/backButtonProfilePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/purple_500"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            app:cardCornerRadius="100dp"
+            app:rippleColor="@color/lightGrey">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:padding="5dp"
+                android:src="@drawable/back_button" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/actionbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:maxLength="25"
+            android:text="My details"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="15dp">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+
+                android:id="@+id/profilePB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorColor="@color/BGcolor"
+                android:layout_centerInParent="true"
+                android:elevation="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/emailInProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/email_at_symbol"
+                        android:drawablePadding="7dp"
+                        android:drawableTint="@color/BGcolor"
+                        android:text="Email : "
+                        android:padding="20dp"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="17sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/usernameInProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/user_icon"
+                        android:drawablePadding="7dp"
+                        android:drawableTint="@color/BGcolor"
+                        android:text="Username : "
+                        android:padding="20dp"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="17sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/ageInProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/calendar"
+                        android:drawablePadding="7dp"
+                        android:drawableTint="@color/BGcolor"
+                        android:text="Age : "
+                        android:padding="20dp"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="17sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/heightInProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/stop_icon"
+                        android:drawablePadding="7dp"
+                        android:drawableTint="@color/BGcolor"
+                        android:text="Height : "
+                        android:padding="20dp"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="17sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/weightInProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/weight_icon"
+                        android:drawablePadding="7dp"
+                        android:drawableTint="@color/BGcolor"
+                        android:text="Weight : "
+                        android:padding="20dp"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="17sp" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/stepGOalInProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/star"
+                        android:drawablePadding="7dp"
+                        android:drawableTint="@color/BGcolor"
+                        android:text="Daily step goal : "
+                        android:padding="20dp"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="17sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

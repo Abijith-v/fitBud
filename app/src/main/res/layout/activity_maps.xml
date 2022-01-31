@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLaoutMaps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".workoutPage.MapsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/mapProgessBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="10dp"
+            android:indeterminate="true"
+            app:indicatorColor="@color/BGcolor" />
+
+        <RelativeLayout
+            android:id="@+id/fragLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <fragment
+                android:id="@+id/map_frag"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomSheetInMap"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:elevation="35dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/white"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleX="2"
+                android:src="@drawable/up_icon"
+                android:tint="@color/BGcolor"
+                tools:ignore="UseAppTint" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-5dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/pauseButtonMaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:clickable="true"
+                    android:elevation="40dp"
+                    android:focusable="true"
+                    android:paddingBottom="20dp"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    app:cardBackgroundColor="@color/BGcolor"
+                    app:cardCornerRadius="100dp"
+                    app:rippleColor="@color/lightGrey">
+
+                    <ImageView
+                        android:id="@+id/pauseIconMaps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/pause_icon" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/stopButtonMaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:clickable="true"
+                    android:elevation="40dp"
+                    android:focusable="true"
+                    android:paddingBottom="20dp"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    app:cardBackgroundColor="@color/BGcolor"
+                    app:cardCornerRadius="100dp"
+                    app:rippleColor="@color/lightGrey">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/stop_icon" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:id="@+id/stepLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/walk_image"
+                        android:tint="@color/BGcolor"
+                        tools:ignore="UseAppTint" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/stepCountInMaps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/durationLL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/time_icon"
+                        android:tint="@color/BGcolor"
+                        tools:ignore="UseAppTint" />
+
+                    <!--                <com.google.android.material.textview.MaterialTextView-->
+                    <!--                    android:layout_marginStart="5dp"-->
+                    <!--                    android:id="@+id/walkDurationInMaps"-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:textSize="20sp"-->
+                    <!--                    android:textColor="@color/BGcolor"-->
+                    <!--                    android:text="-"/>-->
+
+                    <Chronometer
+                        android:id="@+id/stopwatchInBottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/viga"
+                        android:gravity="center"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/location_icon"
+                        android:tint="@color/BGcolor"
+                        tools:ignore="UseAppTint" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/distanceWalkedMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:maxLength="6"
+                        android:text="0 KM"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="2">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/calory_icon"
+                        android:tint="@color/BGcolor"
+                        tools:ignore="UseAppTint" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/caloriesBurntMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="0 KC"
+                        android:textColor="@color/BGcolor"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resetBtnMaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:text="RESET"
+                android:textSize="12sp"
+                app:cornerRadius="10dp"
+                app:rippleColor="@color/lightGrey"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

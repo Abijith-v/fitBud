@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/editGoalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/semi_round_button"
+    android:backgroundTint="@color/mildBlack">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/BGcolor"
+            android:text="Set new step goal"
+            android:textAlignment="center"
+            android:textSize="25dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutinStepsDialog"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Enter new step goal"
+            app:hintTextColor="@color/BGcolor"
+
+            app:boxStrokeColor="@color/BGcolor"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="3dp"
+
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/reports"
+            app:startIconTint="@color/BGcolor"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/BGcolor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/stepGoalFromEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BGcolor"
+                android:maxLength="5"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirmBtninUpdateStepGoal"
+                android:padding="15dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/BGcolor"
+                app:rippleColor="@color/lightGrey"
+                app:cornerRadius="8dp"
+                android:text="confirm"/>
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+
+                android:id="@+id/confirmBtnPBinUpdateStepGoal"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                app:trackThickness="5dp"
+                android:background="@drawable/progressbar_circle"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelBtninUpdateStepGoal"
+            android:padding="15dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/BGcolor"
+            app:cornerRadius="8dp"
+            app:rippleColor="@color/lightGrey"
+            android:text="cancel"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

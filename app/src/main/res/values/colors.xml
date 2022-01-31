@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<!--    <color name="purple_200">#2F9C34</color>-->
+<!--    <color name="purple_500">#2BB131</color>-->
+<!--    <color name="secondary">#2FAA35</color>-->
+<!--    <color name="bottomNavBG">#33BC39</color>-->
+<!--    <color name="teal_200">#FFFFFF</color>-->
+<!--    <color name="teal_700">#33BC39</color>-->
+<!--    <color name="darkgreen">#007A06</color>-->
+<!--    <color name="BGcolor">#2AA530</color>-->
+<!--    <color name="ripple">#54D55A</color>-->
+
+<!--   old -  #1073C3 -->
+<!--   dark - #0059A1 -->
+
+    <color name="purple_200">#1073C3</color>
+    <color name="purple_500">#1073C3</color>
+    <color name="secondary">#1073C3</color>
+    <color name="bottomNavBG">#1073C3</color>
+    <color name="teal_200">#1073C3</color>
+    <color name="teal_700">#1073C3</color>
+    <color name="darkgreen">#0059A1</color>
+    <color name="BGcolor">#1073C3</color>
+    <color name="ripple">#54D55A</color>
+
+<!--    //orange-->
+    <color name="darkorange">#EF6F00</color>
+    <color name="orange">#FF8C00</color>
+
+    <color name="black">#FF000000</color>
+    <color name="mildBlack">#1B1A1A</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGrey">#7A7A7A</color>
+    <color name="darkerWhite">#F1F1F1</color>
+    <color name="lightBlue">#5AE0F1</color>
+
+    <color name="red">#F82828</color>
+    <color name="mildYellow">#FFC107</color>
+
+<!--    text input layout-->
+    <color name="mtrl_textinput_default_box_stroke_color">#1073C3</color>
+    <color name="mtrl_indicator_text_color">#1073C3</color>
+
+</resources>

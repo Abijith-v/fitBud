@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/acievementItemHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/BGcolor"
+            android:text="Sample heading"/>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:visibility="visible"
+            android:id="@+id/imgLoadAchievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="10dp"
+            android:indeterminate="true"
+            app:indicatorColor="@color/BGcolor"/>
+
+        <ImageView
+            android:id="@+id/imgInAchievementItem"
+            android:layout_below="@id/acievementItemHeading"
+            android:padding="5dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_icon"
+            android:tint="@color/BGcolor"/>
+
+        <TextView
+            android:id="@+id/descAchievementItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgInAchievementItem"
+            android:text="Sample description"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/BGcolor"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

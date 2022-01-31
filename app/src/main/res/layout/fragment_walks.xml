@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".workoutPage.walksFrag">
+
+    <RelativeLayout
+        android:id="@+id/walkSessionLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/mildBlack">
+
+        <TextView
+            android:id="@+id/startNewSessionHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentStart="true"
+            android:text="Start a new walking session"
+            android:textAlignment="center"
+            android:textColor="@color/BGcolor"
+            android:textSize="30sp"
+            app:autoSizeTextType="uniform" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/startSessionBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_centerInParent="true"
+                android:elevation="40dp"
+                android:scaleX="2.2"
+                android:scaleY="2.2"
+
+                app:cardBackgroundColor="@color/BGcolor"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    android:src="@drawable/play_icon" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="90dp"
+            android:layout_alignParentBottom="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/startSessionQuote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/BGcolor"
+                android:textSize="12sp"
+                app:autoSizeTextType="uniform" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/sessionQuotePB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                app:indicatorColor="@color/BGcolor" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

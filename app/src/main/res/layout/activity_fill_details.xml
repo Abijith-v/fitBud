@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginAndSignup.FillDetails">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/reloadFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/BGcolor"
+        android:src="@drawable/reload_icon"
+        android:contentDescription="Reload"
+        android:elevation="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        app:rippleColor="@color/lightGrey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:padding="25dp"
+        android:scrollbarThumbVertical="@null">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Fill in your details"
+                android:textColor="@color/BGcolor"
+                android:textSize="30dp" />
+
+            <!--name-->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/TILforNameFillDetails"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="50dp"
+                android:hint="Name / Nickname"
+                app:boxStrokeColor="@color/BGcolor"
+
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="3dp"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/BGcolor"
+                app:hintTextColor="@color/BGcolor"
+                app:startIconDrawable="@drawable/user_icon"
+                app:startIconTint="@color/BGcolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/usernameFromFillIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textColor="@color/BGcolor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--age-->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/TILforAgeFillDetails"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:hint="Your age"
+                app:boxStrokeColor="@color/BGcolor"
+
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="3dp"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/BGcolor"
+                app:hintTextColor="@color/BGcolor"
+                app:startIconDrawable="@drawable/calendar"
+                app:startIconTint="@color/BGcolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/BGcolor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--weight-->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/TILforWeightFillFetails"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:hint="Weight in KGs"
+                app:boxStrokeColor="@color/BGcolor"
+
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="3dp"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/BGcolor"
+                app:hintTextColor="@color/BGcolor"
+                app:startIconDrawable="@drawable/user_icon"
+                app:startIconTint="@color/BGcolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/userWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/BGcolor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--height-->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/TILforHeightFillDetails"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:hint="Height in CMs"
+                app:boxStrokeColor="@color/BGcolor"
+
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="3dp"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/BGcolor"
+                app:hintTextColor="@color/BGcolor"
+                app:startIconDrawable="@drawable/user_icon"
+                app:startIconTint="@color/BGcolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/userHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/BGcolor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+
+                    android:elevation="20dp"
+                    android:id="@+id/FillDetailsPB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/progressbar_circle"
+                    android:indeterminate="true"
+                    android:visibility="invisible"
+                    app:trackThickness="5dp" />
+
+                <!--signup button-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/createAccBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/semi_round_button"
+                    android:text="Create account"
+                    android:textColor="@color/white"
+                    android:transitionName="transitionLoginButton"
+                    app:backgroundTint="@color/BGcolor" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/verifyEmailErrorMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Please verify your email ID to continue \n verification mail sent to your mail"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resendLinkBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/semi_round_button"
+                android:text="Resend Mail"
+                app:rippleColor="@color/lightGrey"
+                android:textColor="@color/white"
+                android:transitionName="transitionLoginButton"
+                android:visibility="invisible"
+                app:backgroundTint="@color/BGcolor" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

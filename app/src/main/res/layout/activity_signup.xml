@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+
+    android:scrollbarThumbVertical="@null"
+    tools:context=".loginAndSignup.signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--back button-->
+        <ImageView
+            android:id="@+id/signupBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cropToPadding="true"
+            android:padding="5dp"
+            android:src="@drawable/back_button"
+            android:tint="@color/BGcolor" />
+
+        <!--title-->
+        <TextView
+            android:id="@+id/signupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/viga"
+            android:text="Create an account"
+            android:textAlignment="center"
+            android:textColor="@color/BGcolor"
+            android:textSize="35dp" />
+
+        <!--inputs-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <!--Email-->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/TILforEmailSignup"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your email"
+                app:boxStrokeColor="@color/BGcolor"
+
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="3dp"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/BGcolor"
+                app:hintTextColor="@color/BGcolor"
+                app:startIconDrawable="@drawable/email_at_symbol"
+                app:startIconTint="@color/BGcolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupEmailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/BGcolor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Pass-->
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/TILforPassSignup"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:hint="Set new password"
+                app:boxStrokeColor="@color/BGcolor"
+
+                app:boxStrokeWidth="1dp"
+                app:boxStrokeWidthFocused="3dp"
+                app:endIconMode="password_toggle"
+
+                app:endIconTint="@color/BGcolor"
+                app:hintTextColor="@color/BGcolor"
+                app:startIconDrawable="@drawable/password_lock"
+                app:startIconTint="@color/BGcolor">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/signupPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/BGcolor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/signUpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/semi_round_button"
+                    android:text="Sign up"
+                    android:transitionName="transitionLoginButton"
+                    app:backgroundTint="@color/BGcolor" />
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/signUpPB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/progressbar_circle"
+                    android:indeterminate="true"
+                    android:visibility="invisible"
+                    app:trackThickness="5dp" />
+                =
+            </RelativeLayout>
+
+
+            <!--already user-->
+            <TextView
+                android:id="@+id/goBackToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:text="Already a user? Login here"
+                android:textColor="@color/BGcolor"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

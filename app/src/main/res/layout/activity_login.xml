@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:fillViewport="true"
+    android:scrollbarThumbVertical="@null"
+    tools:context=".loginAndSignup.login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <!--title-->
+            <TextView
+                android:id="@+id/loginPageHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Sign in to FitBud"
+                android:fontFamily="@font/urbanist_extrabold"
+                android:textAlignment="center"
+                android:textColor="@color/BGcolor"
+                android:textSize="35sp" />
+
+            <!--inputs-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:orientation="vertical">
+
+                <!--username-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TILforEmailInLogin"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColorHint="@color/BGcolor"
+
+                    app:boxStrokeColor="@color/BGcolor"
+                    app:boxStrokeWidth="1dp"
+                    app:boxStrokeWidthFocused="3dp"
+
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/BGcolor"
+                    app:errorEnabled="true"
+                    app:startIconDrawable="@drawable/user_icon"
+                    app:startIconTint="@color/BGcolor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/EmailForLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/BGcolor"
+                        android:textColorHint="@color/BGcolor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--password-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/TILforPasswordInLogin"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColorHint="@color/BGcolor"
+
+                    app:boxStrokeColor="@color/BGcolor"
+                    app:boxStrokeWidth="1dp"
+                    app:boxStrokeWidthFocused="3dp"
+
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/BGcolor"
+                    app:errorEnabled="true"
+                    app:startIconDrawable="@drawable/password_lock"
+                    app:startIconTint="@color/BGcolor">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passForLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/BGcolor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--forgot pass and remember me-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/forgotPassButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                        android:padding="7dp"
+                        android:text="Forgot password?"
+                        android:textColor="@color/BGcolor" />
+
+                </RelativeLayout>
+
+                <!--            pb-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:padding="10dp">
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+
+                        android:id="@+id/loginPB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/progressbar_circle"
+                        android:indeterminate="true"
+                        android:visibility="invisible"
+                        app:trackThickness="5dp" />
+
+
+                    <!--            button-->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttonForLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/semi_round_button"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        android:text="login"
+                        app:rippleColor="@color/lightGrey" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/moveToSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:text="Not a user? Sign up"
+                    android:textColor="@color/BGcolor"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

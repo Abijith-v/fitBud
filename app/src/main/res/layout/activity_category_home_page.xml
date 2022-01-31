@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".diets.category.categoryHomePage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppBarLayoutTheme">
+
+        <RelativeLayout
+            android:id="@+id/actionBar"
+            style="?actionBarTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:textAlignment="center"
+                android:text="Categories"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/BGcolor"
+            app:tabMode="scrollable"
+            app:tabIndicatorGravity="stretch"
+            app:tabSelectedTextColor="@color/BGcolor"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicator="@drawable/fully_round"
+            app:tabIndicatorColor="@color/white"
+            app:tabTextColor="@color/white"/>
+
+
+<!--        android:background="@color/BGcolor"-->
+<!--        app:tabContentStart="5dp"-->
+<!--        app:tabSelectedTextColor="@color/BGcolor"-->
+<!--        app:tabIndicator="@drawable/fully_round"-->
+<!--        app:tabIndicatorColor="@color/white"-->
+<!--        app:tabIndicatorHeight="3dp"-->
+<!--        app:tabMode="scrollable"-->
+<!--        app:tabIndicatorAnimationMode="elastic"-->
+<!--        app:tabRippleColor="@color/ripple"-->
+<!--        app:tabTextColor="@color/white"-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ViewPagerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout><!--".diets.category.categoryHomePage"-->

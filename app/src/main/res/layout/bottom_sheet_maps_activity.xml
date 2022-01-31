@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner"
+    android:backgroundTint="@color/white"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true">
+
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:id="@+id/pausePlayLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:elevation="40dp"
+            android:focusable="true"
+            android:paddingBottom="20dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:cardBackgroundColor="@color/BGcolor"
+            app:cardCornerRadius="100dp"
+            app:rippleColor="@color/lightGrey">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/pause_icon" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:elevation="40dp"
+            android:focusable="true"
+            android:paddingBottom="20dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:cardBackgroundColor="@color/BGcolor"
+            app:cardCornerRadius="100dp"
+            app:rippleColor="@color/lightGrey">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/stop_icon" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/pausePlayLL"
+        android:id="@+id/stepLL"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/walk_image"
+            app:tint="@color/BGcolor" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/stepCountInMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/BGcolor"
+            android:text="0"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/durationLL"
+        android:layout_below="@id/stepLL"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/time_icon"
+            app:tint="@color/BGcolor" />
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/walkDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/BGcolor"
+            android:text="0"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/durationLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginEnd="15dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/location_icon"
+                app:tint="@color/BGcolor" />
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:id="@+id/distanceWalkedMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/BGcolor"
+                android:text="0"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/calory_icon"
+                app:tint="@color/BGcolor" />
+
+            <TextView
+                android:id="@+id/caloriesBurntMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/BGcolor"
+                android:text="0"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
