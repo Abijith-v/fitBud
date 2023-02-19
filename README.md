@@ -11,10 +11,10 @@ Fitbud is a fitness oriented android application built with Java. The app has fo
 - Shows daily stats on notificaion bar
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/57085768/219954726-df7a0c33-d0d1-4b09-a67d-eee18ecf748a.jpeg" width=250 margin="10px">
-  <img src="https://user-images.githubusercontent.com/57085768/219954729-5e708b70-e5ff-4367-bf67-81b9b118a55c.jpeg" width=250 margin="10px">
-  <img src="https://user-images.githubusercontent.com/57085768/219954733-10264e73-d9e5-480a-9e60-e8916fecdec2.jpeg" width=250 margin="10px">
-  <img src="https://user-images.githubusercontent.com/57085768/219954739-22881e10-e1d4-45c9-bec5-d0b9008e1f9d.jpeg" width=250 margin="10px">
-  <img src="https://user-images.githubusercontent.com/57085768/219954741-17735b20-8a8a-4e7b-8b7d-d4f6ba8e72a6.jpeg" width=250 margin="10px">
-  <img src="https://user-images.githubusercontent.com/57085768/219954746-fa777d2c-9a80-475b-9b10-ec293249082c.jpeg" width=250 margin="10px">
+  <img src="https://user-images.githubusercontent.com/57085768/219954726-df7a0c33-d0d1-4b09-a67d-eee18ecf748a.jpeg" width=250 padding="10px">
+  <img src="https://user-images.githubusercontent.com/57085768/219954729-5e708b70-e5ff-4367-bf67-81b9b118a55c.jpeg" width=250 padding="10px">
+  <img src="https://user-images.githubusercontent.com/57085768/219954733-10264e73-d9e5-480a-9e60-e8916fecdec2.jpeg" width=250 padding="10px">
+  <img src="https://user-images.githubusercontent.com/57085768/219954739-22881e10-e1d4-45c9-bec5-d0b9008e1f9d.jpeg" width=250 padding="10px">
+  <img src="https://user-images.githubusercontent.com/57085768/219954741-17735b20-8a8a-4e7b-8b7d-d4f6ba8e72a6.jpeg" width=250 padding="10px">
+  <img src="https://user-images.githubusercontent.com/57085768/219954746-fa777d2c-9a80-475b-9b10-ec293249082c.jpeg" width=250 padding="10px">
 </p>
