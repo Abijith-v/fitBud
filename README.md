@@ -16,5 +16,5 @@ Fitbud is a fitness oriented android application built with Java. The app has fo
   <img src="https://user-images.githubusercontent.com/57085768/219954733-10264e73-d9e5-480a-9e60-e8916fecdec2.jpeg" width=250 padding="10px">
   <img src="https://user-images.githubusercontent.com/57085768/219954739-22881e10-e1d4-45c9-bec5-d0b9008e1f9d.jpeg" width=250 padding="10px">
   <img src="https://user-images.githubusercontent.com/57085768/219954741-17735b20-8a8a-4e7b-8b7d-d4f6ba8e72a6.jpeg" width=250 padding="10px">
-  <img src="https://user-images.githubusercontent.com/57085768/219954746-fa777d2c-9a80-475b-9b10-ec293249082c.jpeg" width=250 padding="10px">
+  <img src="https://user-images.githubusercontent.com/57085768/219955300-2c4406ce-30d2-4f3c-8791-2f1e77dfc00c.jpeg" width=250 padding="10px">
 </p>
